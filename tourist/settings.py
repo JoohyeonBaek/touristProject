@@ -25,7 +25,7 @@ SECRET_KEY = 'bk!%glnk$gfzl$#nc%@nhpl_n7y19-7n6&whzd6taif50jv0ca'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['ec2-3-34-126-187.ap-northeast-2.compute.amazonaws.com', 'localhost', '127.0.0.1']
 
 
 # Application definition
@@ -132,4 +132,3 @@ STATIC_ROOT = ''
 STATIC_URL = '/static/'
 STATICFILES_DIRS = ( os.path.join('static'), )
 
-ALLOWED_HOSTS = ['ec2-3-34-126-187.ap-northeast-2.compute.amazonaws.com', 'localhost', '127.0.0.1']
