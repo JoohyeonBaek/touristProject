@@ -132,4 +132,4 @@ STATIC_ROOT = ''
 STATIC_URL = '/static/'
 STATICFILES_DIRS = ( os.path.join('static'), )
 
-ALLOWED_HOSTS = ['ec2-3-34-126-187.ap-northeast-2.compute.amazonaws.com:8000', 'localhost', '127.0.0.1']
+ALLOWED_HOSTS = ['ec2-3-34-126-187.ap-northeast-2.compute.amazonaws.com', 'localhost', '127.0.0.1']
