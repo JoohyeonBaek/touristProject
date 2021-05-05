@@ -25,7 +25,7 @@ SECRET_KEY = 'bk!%glnk$gfzl$#nc%@nhpl_n7y19-7n6&whzd6taif50jv0ca'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['ec2-3-34-126-187.ap-northeast-2.compute.amazonaws.com', 'localhost', '127.0.0.1']
+ALLOWED_HOSTS = ["*"]
 
 
 # Application definition
@@ -86,10 +86,15 @@ WSGI_APPLICATION = 'tourist.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': BASE_DIR / 'db.sqlite3',
+        'ENGINE': 'django.db.backends.mysql',
+        'NAME': 'tour',  # mysql
+        'USER': 'root',  # root
+        'PASSWORD': '22gkrsus',  # password
+        'HOST': 'localhost',
+        'PORT': '3306'
     }
 }
+
 
 
 # Password validation

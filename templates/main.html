@@ -21,12 +21,6 @@
             font-size: 50px;
         }
 
-        #introduceContent {
-            text-align: center;
-            padding: 2% %% 0;
-            font-size: 30px;
-        }
-
         #memberTitle {
             text-align: center;
             padding: 3% 0 0;
@@ -141,9 +135,10 @@
             width:100%;
             height:40%;
             text-align:center;
-            font-size:25px;
+            font-size:20px;
             padding-top:10%;
         }
+
     </style>
     {% block header %}
     {% endblock header%}
@@ -157,8 +152,8 @@
 <div id="trendmain">
     <div class="subtitle">외국인 한국관광 만족도 (평균점수, 2019년 기준)</div>
     <div id="satisficationSection">
-        <div class= "graphSection" id="graph"></div>
-        <div class= "graphdataSection">
+        <div class="graphSection" id="graph"></div>
+        <div class="graphdataSection">
             <div class="satisfictaionBoxLine1">
                 <div style="width:20%; height:100%; float:left;">
                     <div class="data">94점</div>
@@ -246,27 +241,27 @@
 
     <div class="subtitle">코로나 단계별 방한 외국인 수</div>
     <div style="width:100%; height:50%; background-color: #F6F6F6;">
-        <div id="covidGraph" class= "graphSection"></div>
-        <div class= "graphdataSection">
+        <div id="covidGraph" class="graphSection"></div>
+        <div class="graphdataSection">
             <div style="width:25%; height:50%; float:left; margin-top:12.5%">
-                <div class="data">26005</div>
+                <div class="data">26005명</div>
                 <div class="label">1단계</div>
             </div>
             <div style="width:25%; height:50%; float:left; margin-top:12.5%">
-                <div class="data">25083</div>
+                <div class="data">25083명</div>
                 <div class="label">1.5단계</div>
             </div>
             <div style="width:25%; height:50%; float:left; margin-top:12.5%">
-                <div class="data">24162</div>
+                <div class="data">24162명</div>
                 <div class="label">2단계</div>
             </div>
             <div style="width:25%; height:50%; float:left; margin-top:12.5%">
-                <div class="data">22319</div>
+                <div class="data">22319명</div>
                 <div class="label">3단계</div>
             </div>
+        </div>
     </div>
 </div>
-
     <script>
 am4core.ready(function() {
 
@@ -353,9 +348,9 @@ chart.data = [
 
 
 }); // end am4core.ready()
-</script>
 
-        <script>
+</script>
+    <script>
 am4core.ready(function() {
 
 // Themes begin
@@ -418,10 +413,11 @@ chart.data = [
 
 
 }); // end am4core.ready()
-</script>
+
+    </script>
 
 
+    {% endblock explain_contents%}
 
-{% endblock explain_contents%}
 </body>
 </html>
